@@ -1,0 +1,15 @@
+      * LAYOUT CADASTRO DE CLIENTES
+       FD  ARQ-CLIENTE
+           LABEL RECORD IS STANDARD
+           VALUE OF FILE-STATUS IS WID-ARQ-CLIENTE.
+      *
+       01  CLI-REGISTRO-CLIENTE.
+           03 CLI-CHAVE-CLIENTE.
+              05 CLI-CD-CLIENTE      PIC  9(007).
+           03 CLI-NR-CNPJ-CLIENTE    PIC  9(014).
+           03 CLI-DS-RAZAO-SOCIAL    PIC  X(040).
+           03 CLI-NR-LATITUDE        PIC S9(003)V9(008).
+           03 CLI-NR-LONGITUDE       PIC S9(003)V9(008).
+           03 CLI-CD-VENDEDOR        PIC  9(007).
+           03 CLI-QT-DISTANCIA       PIC  9(015).
+      *
